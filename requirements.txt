@@ -118,7 +118,7 @@ python-xapp==1.8.1
 python-xlib==0.20
 python3-openid==3.1.0
 pytz==2019.3
-pyxdg==0.25
+pyxdg==0.26
 PyYAML==3.12
 pyzmq==19.0.0
 qtconsole==4.7.3
