@@ -5,6 +5,7 @@
     color: #fff;
     margin-right: 20px;
   }
+  
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <img class="img-fluid img-thumbnail rounded mx-auto d-block" height="60px" width="50px"  alt="Responsive image" src="{% static 'images/nbs_logo.png'%}">
@@ -16,6 +17,8 @@
       {% if request.user.is_staff %}
       <a class="nav-item nav-link active" href="{% url 'home' %}">Dashboard</a>
       <a class="nav-item nav-link" href="{% url 'products' %}">Products</a>
+      {% else %}
+        <a class="nav-item nav-link" href="{% url 'account' %}">Settings</a>
       {% endif %}
     </div>
   </div>
