@@ -18,6 +18,7 @@ from django.contrib.auth.decorators import login_required
 
 @unauthenticated_user
 def registerPage(request):
+	
 	form = CreateUserForm()
 	if request.method == 'POST':
 		form = CreateUserForm(request.POST)
